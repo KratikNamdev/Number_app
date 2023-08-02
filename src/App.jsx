@@ -28,6 +28,7 @@ import AddGame from './pages/Games/AddGame';
 import Payment from './pages/Payments/Payment';
 import Wallet from './pages/Payments/Wallet';
 import UserList from './pages/Users/UserList';
+import Login from './pages/Login';
 
 function App() {
 
@@ -69,13 +70,17 @@ function App() {
             {
               localUser ?
                 <>
-                  <Route path="/" element={<Navigate to={'/dashboard'} />} />
+                <Route path='/' element={<Login/>} />
+
+                  <Route path="/home" element={<Navigate to={'/dashboard'} />} />
                   <Route path='/dashboard' element={<Home />} />
                   <Route path='/allgamelist' element={<AllGameList/>} />
                   <Route path='/addgame' element={<AddGame/>} />
                   <Route path='/payment' element={<Payment/>} />
                   <Route path='/wallet' element={<Wallet/>} />
                   <Route path='/userlist' element={<UserList/>} />
+                  
+
 
 
 
@@ -111,5 +116,18 @@ function App() {
     </BrowserRouter>
   );
 }
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  // Check if the user is logged in, otherwise, redirect to the login page
+  const isLoggedIn = true; // Replace this with your real authentication check
+  return (
+    <Route
+      {...rest}
+      render={(props) =>
+        isLoggedIn ? <Component {...props} /> : <Redirect to="/" />
+      }
+    />
+  );
+};
 
 export default App;
