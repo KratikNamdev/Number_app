@@ -28,6 +28,11 @@ export const menuItems = [
                 title: 'Add Game',
                 link: '/addgame'
             },
+            {
+                icon: <HiOutlineBuildingLibrary />,
+                title: 'Update Game',
+                link: '/updategame'
+            },
         ]
     },
     {
@@ -44,6 +49,11 @@ export const menuItems = [
                 icon: <HiOutlineBuildingLibrary />,
                 title: 'Wallet',
                 link: '/wallet'
+            },
+            {
+                icon: <HiOutlineBuildingLibrary />,
+                title: 'Search User',
+                link: '/searchuser'
             },
             // {
             //     icon: <HiOutlineBuildingLibrary />,
@@ -65,40 +75,40 @@ export const menuItems = [
            
         ]
     },
-    {
-        icon: <LiaWalletSolid />,
-        title: "Earnings & Payouts",
-        type: 'group',
-        children: [
-            {
-                icon: <HiOutlineBuildingLibrary />,
-                title: 'Earnings Report',
-                link: '/earnings',
-            },
-            {
-                icon: <HiOutlineBuildingLibrary />,
-                title: 'Payout Report',
-                link: '/payouts'
-            },
+    // {
+    //     icon: <LiaWalletSolid />,
+    //     title: "Earnings & Payouts",
+    //     type: 'group',
+    //     children: [
+    //         {
+    //             icon: <HiOutlineBuildingLibrary />,
+    //             title: 'Earnings Report',
+    //             link: '/earnings',
+    //         },
+    //         {
+    //             icon: <HiOutlineBuildingLibrary />,
+    //             title: 'Payout Report',
+    //             link: '/payouts'
+    //         },
             // {
             //     icon: <HiOutlineBuildingLibrary />,
             //     title: 'Admin Charges',
             //     link: '/admincharge'
             // },
-        ]
-    },
-    {
-        icon: <IoGameControllerOutline />,
-        title: "Utilities",
-        type: 'group',
-        children: [
-            {
-                icon: <HiOutlineBuildingLibrary />,
-                title: 'Manage Package',
-                link: '/package',
-            },
-        ]
-    },
+    //     ]
+    // },
+    // {
+    //     icon: <IoGameControllerOutline />,
+    //     title: "Utilities",
+    //     type: 'group',
+    //     children: [
+    //         {
+    //             icon: <HiOutlineBuildingLibrary />,
+    //             title: 'Manage Package',
+    //             link: '/package',
+    //         },
+    //     ]
+    // },
     // {
     //     icon: <PiGift />,
     //     title: "Rewards",

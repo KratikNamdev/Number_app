@@ -2,7 +2,7 @@ import React from 'react';
 
 const GameTable = ({ data }) => {
   return (
-    <table>
+    <table className="transaction-table">
       <thead>
         <tr>
           <th>Game Name</th>

@@ -29,6 +29,9 @@ import Payment from './pages/Payments/Payment';
 import Wallet from './pages/Payments/Wallet';
 import UserList from './pages/Users/UserList';
 import Login from './pages/Login';
+import SearchPaymentDetails from './pages/Payments/SearchPaymentDetails';
+import UpateGame from './pages/Games/UpateGame';
+import UserDetails from './pages/Users/UserDetails';
 
 function App() {
 
@@ -78,9 +81,13 @@ function App() {
                   <Route path='/addgame' element={<AddGame/>} />
                   <Route path='/payment' element={<Payment/>} />
                   <Route path='/wallet' element={<Wallet/>} />
-                  <Route path='/userlist' element={<UserList/>} />
-                  
+                  <Route path='/searchuser' element={<SearchPaymentDetails/>} />
 
+                  <Route path='/userlist' element={<UserList/>} />
+                  <Route path='/updategame' element={<UpateGame/>} />
+                  <Route path="/user/:userId" component={UserDetails} />
+
+                 
 
 
 
