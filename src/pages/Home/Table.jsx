@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import SummaryTable from '../../components/designs/Tables/summaryTable'
+// import SummaryTable from '../../components/designs/Tables/summaryTable'
 import { getUpdatedDataForTable, tableStructure } from '../../utils/Data/HomeData'
 import { useSelector } from 'react-redux';
+import SummaryTable from "../../components/designs/Tables/summaryTable";
 
 const Table = () => {
     const { dayBoard, halfMonthBoard, fullMonthBoard } = useSelector((state) => state.home);
